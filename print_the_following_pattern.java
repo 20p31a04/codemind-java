@@ -8,11 +8,16 @@ class pattern
       N=scr.nextInt();
       for(int i=1;i<=N;i++)
       {
-          int k=1;
-          for(int j=N;j>=i;j--)
+         
+          for(int j=1;j<=N;j++)
           {
-              System.out.print(k);
-              k++;
+              if(j==1 || i==N || j==i)
+              
+                   System.out.print("*");
+              else
+                   System.out.print(" ");
+              
+             
               
           }
           System.out.println();
